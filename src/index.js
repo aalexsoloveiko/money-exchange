@@ -8,7 +8,7 @@ module.exports = function makeExchange(currency) {
     for (let i = 0; i <= 4; i++) {
       let total = Math.floor(currency / coinsValue[i]);
       if (total !== 0) {
-        coinsKit[coinsName[i]] = total;
+        coinsSet[coinsName[i]] = total;
         currency %= coinsValue[i];
       }
     }
